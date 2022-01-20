@@ -26,6 +26,11 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     margin-bottom: 32px;
+
+    b {
+      font-weight: 900;
+      margin-left: 20px;
+    }
   }
 
   &__top-subtitle {
@@ -47,6 +52,14 @@
       left: 50%;
 
       transform: translateX(-50%);
+    }
+
+    &--padding-sm {
+      padding: 0 10%;
+
+      &:before {
+        background-color: $color-primary;
+      }
     }
   }
 

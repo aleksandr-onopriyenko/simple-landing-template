@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+.css {
+  background: url(../img/css3.jpg);
+  background-position: 0 50%;
+  background-size: cover;
+
+  position: relative;
+
+  color: $color-primary;
+}
