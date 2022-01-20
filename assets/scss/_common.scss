@@ -1,0 +1,44 @@
+@use "variables" as *;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  @extend %dimensions;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+
+  &-sub {
+    font-size: 3rem;
+  }
+}
+
+.text-c {
+  text-align: center;
+}
