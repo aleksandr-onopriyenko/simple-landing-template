@@ -65,6 +65,15 @@
     &--padding-7p {
       padding: 0 7.5%;
     }
+
+    &--bold {
+      font-weight: 700;
+      margin-left: 300px;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
   &__bottom {
