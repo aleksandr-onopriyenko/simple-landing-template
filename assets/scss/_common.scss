@@ -10,6 +10,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -28,17 +29,4 @@ a {
 
 section {
   @extend %dimensions;
-}
-
-.title {
-  font-family: "Roboto Slab", serif;
-  font-size: 5rem;
-
-  &-sub {
-    font-size: 3rem;
-  }
-}
-
-.text-c {
-  text-align: center;
 }
