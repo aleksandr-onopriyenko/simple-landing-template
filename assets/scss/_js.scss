@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+.js {
+  background-image: url(../img/js.jpg);
+  background-position: 0 50%;
+  background-size: cover;
+
+  position: relative;
+  color: $color-light;
+
+  .content__bottom-image {
+    height: 98.5%;
+  }
+}
