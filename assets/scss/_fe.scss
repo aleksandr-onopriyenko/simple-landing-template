@@ -7,12 +7,10 @@
   background-size: 75%;
 
   .content {
-    padding-top: 209px;
-
-    gap: 185px;
-
+    gap: 225px;
     &__top {
       text-shadow: 5px 5px 10px #ffffff, 0 0 30px #ffffff;
+      transform: translateY(44px);
     }
 
     &__top-title {
