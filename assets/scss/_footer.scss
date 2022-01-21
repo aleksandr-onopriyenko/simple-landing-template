@@ -1,0 +1,59 @@
+@use "variables" as *;
+
+.footer {
+  padding: 100px 0;
+
+  color: $color-accent;
+  background-color: $color-primary;
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-social {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    gap: 16px;
+    &__link {
+      display: block;
+
+      width: 32px;
+      height: 32px;
+
+      background-repeat: no-repeat;
+
+      &:hover {
+        filter: brightness(0) invert(1);
+      }
+
+      &:first-child {
+        width: 36px;
+        height: 36px;
+        margin-right: 4px;
+      }
+
+      @each $social in home, linkedin, facebook, instagram, viber, envelope,
+      telegram {
+        &--#{$social} {
+          background-image: url(../img/socials-icon/#{$social}.svg);
+        }
+      }
+    }
+  }
+
+  &-copy {
+    text-align: center;
+    letter-spacing: normal;
+    &__name {
+      padding-left: 20px;
+
+      background-image: url(../img/copyright.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px;
+    }
+  }
+}

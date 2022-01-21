@@ -1,29 +1,30 @@
 @use "variables" as *;
 .header {
+  background-image: url(../img/potential.jpg);
+  background-position: 0 80%;
+
   font-size: 3rem;
+
   @extend %dimensions;
 
-  background: url(../img/potential.jpg);
-  background-position: 0 80%;
-  background-size: cover;
-
-  position: relative;
-
   &__title {
+    padding-top: 3.45%;
+    padding-left: 7%;
+
+    letter-spacing: 33.6px;
+    text-transform: uppercase;
+
+    color: $color-light;
+
     font-family: "Roboto Slab";
     font-size: 10rem;
     font-weight: 900;
-    text-transform: uppercase;
-    color: $color-light;
-
-    padding-top: 3.45%;
-    padding-left: 7%;
-    letter-spacing: 33.6px;
   }
 
   span {
     display: block;
-    font-weight: 100;
+
     font-size: 7rem;
+    font-weight: 100;
   }
 }

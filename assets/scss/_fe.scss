@@ -1,16 +1,14 @@
 @use "variables" as *;
 
 .fe {
+  color: $color-primary;
   background-image: url(../img/fe-logo.png);
-  background-repeat: no-repeat;
   background-position: -10% -10%;
   background-size: 75%;
 
-  position: relative;
-  color: $color-primary;
-
   .content {
     padding-top: 209px;
+
     gap: 185px;
 
     &__top {
@@ -19,9 +17,10 @@
 
     &__top-title {
       span {
-        font-weight: 300;
-        font-size: 4rem;
         text-transform: uppercase;
+
+        font-size: 4rem;
+        font-weight: 300;
       }
     }
 

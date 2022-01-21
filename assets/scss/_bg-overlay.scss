@@ -1,60 +1,66 @@
 @use "variables" as *;
 .bg-overlay {
   position: absolute;
-  inset: 0;
   z-index: 1;
 
   width: 100%;
   height: 100%;
 
+  inset: 0;
+
   &--header {
     overflow: hidden;
-    background: rgba($color-primary, 1);
+
     opacity: 0.4;
+    background: rgba($color-primary, 1);
 
     &:before {
-      content: "";
-      width: 100%;
-      height: 80%;
-      background-color: #d53d27;
-      clip-path: polygon(100% 0%, 0% 100%, 100% 75%);
-
       position: absolute;
       right: 0;
       bottom: 0;
+
+      width: 100%;
+      height: 80%;
+
+      content: "";
+
+      background-color: #d53d27;
+
+      clip-path: polygon(100% 0%, 0% 100%, 100% 75%);
     }
   }
 
   &--html {
     background: linear-gradient(
-      135deg,
-      rgba(53, 123, 143, 0.75) 0%,
-      rgba(2, 37, 48, 0.9) 30%,
-      rgba(0, 6, 8, 0.9) 100%
+    135deg,
+    rgba(53, 123, 143, 0.75) 0%,
+    rgba(2, 37, 48, 0.9) 30%,
+    rgba(0, 6, 8, 0.9) 100%
     );
   }
 
   &--css {
     background: linear-gradient(
-      135deg,
-      rgba(255, 192, 128, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 70%
+    135deg,
+    rgba(255, 192, 128, 0.9) 0%,
+    rgba(255, 255, 255, 0.9) 70%
     );
   }
 
   &--js {
     background: linear-gradient(
-      135deg,
-      rgba(87, 150, 167, 0.5) 0%,
-      rgba(2, 37, 48, 0.85) 30%,
-      rgba(0, 0, 0, 0.9) 100%
+    135deg,
+    rgba(87, 150, 167, 0.5) 0%,
+    rgba(2, 37, 48, 0.85) 30%,
+    rgba(0, 0, 0, 0.9) 100%
     );
   }
+
   &--fe {
     background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.4) 50%,
-      rgba(255, 192, 128, 0.4) 100%
+    135deg,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 192, 128, 0.4) 100%
     );
   }
 }

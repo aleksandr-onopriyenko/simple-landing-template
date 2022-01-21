@@ -10,88 +10,131 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;700;900&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="bg-overlay bg-overlay--header"></div>
-    <h1 class="header__title title">
-      <span>открой<br>свой<br></span>
-      потенциал
-    </h1>
-  </header>
-  <section class="html">
-    <div class="bg-overlay bg-overlay--html"></div>
-    <div class="content">
-      <div class="content__top">
-        <h2 class="content__top-title">ЧТО ТАКОЕ <b>HTML</b></h2>
-        <h3 class="content__top-subtitle">И ПОЧЕМУ ЕГО ДОЛЖЕН ЗНАТЬ КАЖДЫЙ ВЕБ-РАЗРАБОТЧИК</h3>
-      </div>
-      <div class="content__bottom">
-        <img class="content__bottom-image" src="assets/img/html5-logo.png" alt="html-logo image">
-        <p class="content__bottom-text">
-          HTML (от английского HyperText Markup Language) — это язык гипертекстовой разметки страницы. Он используется
-          для
-          того, чтобы дать браузеру понять, как нужно отображать загруженный сайт.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section class="css">
-    <div class="bg-overlay bg-overlay--css"></div>
-    <div class="content">
-      <div class="content__top">
-        <h2 class="content__top-title">ВЕЛИКОЛЕПНЫЙ <b>CSS</b></h2>
-        <h3 class="content__top-subtitle content__top-subtitle--padding-10p">КАК СТАТЬ ВОСТРЕБОВАННЫМ ВЕБ-РАЗРАБОТЧИКОМ
-        </h3>
-      </div>
-      <div class="content__bottom">
-        <img class="content__bottom-image" src="assets/img/css3-logo.png" alt="css-logo image">
-        <p class="content__bottom-text">
-          CSS используется для определения стилей (правил) оформления документов — включая дизайн, вёрстку и вариации
-          макета для различных устройств и размеров экрана.
-        </p>
-      </div>
-    </div>
-  </section>
+  <div class="wrapper">
+    <header id="header" class="header">
+      <div class="bg-overlay bg-overlay--header"></div>
+      <h1 class="header__title title">
+        <span>открой<br>свой<br></span>
+        потенциал
+      </h1>
 
-  <section class="js">
-    <div class="bg-overlay bg-overlay--js"></div>
-    <div class="content">
-      <div class="content__top">
-        <h2 class="content__top-title"><b>JAVASCRIPT</b></h2>
-        <h3 class="content__top-subtitle content__top-subtitle--padding-7p">БЕЗГРАНИЧНЫЕ ВОЗМОЖНОСТИ ВЕБ-ДИЗАЙНА И
-          ИНТЕРАКТИВНОСТИ
-        </h3>
-      </div>
-      <div class="content__bottom">
-        <img class="content__bottom-image" src="assets/img/js-logo.png" alt="js-logo image">
-        <p class="content__bottom-text">
-          Сейчас JavaScript — единственный язык программирования для браузеров. Он работает под Windows, macOS, Linux и
-          на мобильных платформах, то есть везде. Если не знаешь JavaScript, делать в программировании интерактивных
-          сайтов нечего.
-        </p>
-      </div>
-    </div>
-  </section>
+      <ul class="menu">
 
-  <section class="fe">
-    <div class="bg-overlay bg-overlay--fe"></div>
-    <div class="content">
-      <div class="content__top">
-        <h2 class="content__top-title"><b>FRONTEND</b> — <span>это</span> КРУТО</h2>
-        <h3 class="content__top-subtitle content__top-subtitle--bold">МОЩНЫЕ ТЕХНОЛОГИИ</h3>
+        <li class="menu__link"><a href="#header"><i class="fas fa-home"></i></a></li>
+        <li class="menu__link"><a href="#html"><i class="fas fa-code"></i></a></li>
+        <li class="menu__link"><a href="#css"><i class="fab fa-css3"></i></a></li>
+        <li class="menu__link"><a href="#js"><i class="fab fa-js-square"></i></a></li>
+        <li class="menu__link"><a href="#fe"><i class="fas fa-head-side-virus"></i></a></li>
+      </ul>
+    </header>
+
+    <section id="html" class="html">
+      <div class="bg-overlay bg-overlay--html"></div>
+      <div class="content">
+        <div class="content__top">
+          <h2 class="content__top-title">ЧТО ТАКОЕ <b>HTML</b></h2>
+          <h3 class="content__top-subtitle">И ПОЧЕМУ ЕГО ДОЛЖЕН ЗНАТЬ КАЖДЫЙ ВЕБ-РАЗРАБОТЧИК</h3>
+        </div>
+        <div class="content__bottom">
+          <img class="content__bottom-image" src="assets/img/html5-logo.png" alt="html-logo image">
+          <p class="content__bottom-text">
+            HTML (от английского HyperText Markup Language) — это язык гипертекстовой разметки страницы. Он используется
+            для
+            того, чтобы дать браузеру понять, как нужно отображать загруженный сайт.
+          </p>
+        </div>
       </div>
-      <div class="content__bottom">
-        <p class="content__bottom-text">
-          — активно развивается, высоко оплачивается, располагается на стыке дизайна и технологий,
-          да и просто супер-пупер-гипер-мега интересен!
-        </p>
+    </section>
+
+    <section id="css" class="css">
+      <div class="bg-overlay bg-overlay--css"></div>
+      <div class="content">
+        <div class="content__top">
+          <h2 class="content__top-title">ВЕЛИКОЛЕПНЫЙ <b>CSS</b></h2>
+          <h3 class="content__top-subtitle content__top-subtitle--padding-10p">КАК СТАТЬ ВОСТРЕБОВАННЫМ
+            ВЕБ-РАЗРАБОТЧИКОМ
+          </h3>
+        </div>
+        <div class="content__bottom">
+          <img class="content__bottom-image" src="assets/img/css3-logo.png" alt="css-logo image">
+          <p class="content__bottom-text">
+            CSS используется для определения стилей (правил) оформления документов — включая дизайн, вёрстку и вариации
+            макета для различных устройств и размеров экрана.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="js" class="js">
+      <div class="bg-overlay bg-overlay--js"></div>
+      <div class="content">
+        <div class="content__top">
+          <h2 class="content__top-title"><b>JAVASCRIPT</b></h2>
+          <h3 class="content__top-subtitle content__top-subtitle--padding-7p">БЕЗГРАНИЧНЫЕ ВОЗМОЖНОСТИ ВЕБ-ДИЗАЙНА И
+            ИНТЕРАКТИВНОСТИ
+          </h3>
+        </div>
+        <div class="content__bottom">
+          <img class="content__bottom-image" src="assets/img/js-logo.png" alt="js-logo image">
+          <p class="content__bottom-text">
+            Сейчас JavaScript — единственный язык программирования для браузеров. Он работает под Windows, macOS, Linux
+            и
+            на мобильных платформах, то есть везде. Если не знаешь JavaScript, делать в программировании интерактивных
+            сайтов нечего.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fe" class="fe">
+      <div class="bg-overlay bg-overlay--fe"></div>
+      <div class="content">
+        <div class="content__top">
+          <h2 class="content__top-title"><b>FRONTEND</b> — <span>это</span> КРУТО</h2>
+          <h3 class="content__top-subtitle content__top-subtitle--bold">МОЩНЫЕ ТЕХНОЛОГИИ</h3>
+        </div>
+        <div class="content__bottom">
+          <p class="content__bottom-text">
+            — активно развивается, высоко оплачивается, располагается на стыке дизайна и технологий,
+            да и просто супер-пупер-гипер-мега интересен!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <nav class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link--home"></a>
+          <a href="#" class="footer-social__link footer-social__link--linkedin"></a>
+          <a href="#" class="footer-social__link footer-social__link--facebook"></a>
+          <a href="#" class="footer-social__link footer-social__link--instagram"></a>
+          <a href="#" class="footer-social__link footer-social__link--envelope"></a>
+          <a href="#" class="footer-social__link footer-social__link--telegram"></a>
+          <a href="#" class="footer-social__link footer-social__link--viber"></a>
+        </nav>
+        <div class="footer-copy">
+          <span class="footer-copy__name">Aleksander Onopriyenko</span>
+          <div class="footer-copy__text">Айлин Гёрен - консультации и помощь в разработке дизайна</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="warning">
+    Извините, учебный шаблон не поддерживает отзывчивость, откройте страницу на весь экран 1920x1080 или уменьшите
+    масштаб страницы.
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
